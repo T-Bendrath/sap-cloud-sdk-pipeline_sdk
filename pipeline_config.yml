@@ -31,14 +31,14 @@ steps:
 stages:
   integrationTests:
     credentials:
-      - alias: 'S4D'
-        credentialId: 'CredentialsId-S4D'
+      - alias: 'MOCK_SYSTEM'
+        credentialId: 'CredentialsId-Mock'
 
   productionDeployment:
     cfTargets:
-      - org: 'dtsgermany'
+      - org: 'D064809trial_trial'
         space: 'dev'
         apiEndpoint: 'https://api.cf.eu10.hana.ondemand.com'
-        appName: 'd064809-jenkins-demo'
+        appName: 'sdkapp'
         manifest: 'manifest.yml'
         credentialsId: 'CredentialsId-Cloud'
