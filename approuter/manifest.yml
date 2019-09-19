@@ -9,6 +9,6 @@ applications:
     - nodejs_buildpack
   env:
     TENANT_HOST_PATTERN: 'approuter-(.*).cfapps.eu10.hana.ondemand.com'
-    destinations: '[{"name":"app-destination", "url" :"https://sdkapp-turbulent-quoll.cfapps.eu10.hana.ondemand.com", "forwardAuthToken": true}]'
+    destinations: '[{"name":"app-destination", "url" :"https://sdkapp.cfapps.eu10.hana.ondemand.com", "forwardAuthToken": true}]'
   services:
     - my-xsuaa
