@@ -1,0 +1,7 @@
+---
+erp:
+  default: "MOCK_SYSTEM"
+  systems:
+    - alias: "MOCK_SYSTEM"
+      uri: "https://mockserver-daring-baboon.cfapps.eu10.hana.ondemand.com/"
+      proxy: "http://proxy:8080"
