@@ -1,10 +1,11 @@
 ---
 applications:
 
-- name: sdkapp
+- name: sdk-app
+  routes:
+    - route: sdk-app-d064809.cfapps.eu10.hana.ondemand.com
   memory: 1024M
   timeout: 300
-  random-route: true
   path: application/target/sdk-app-deployable-application.war
   buildpacks:
     - sap_java_buildpack

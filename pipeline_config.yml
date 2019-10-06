@@ -39,6 +39,6 @@ stages:
       - org: 'D064809trial_trial'
         space: 'dev'
         apiEndpoint: 'https://api.cf.eu10.hana.ondemand.com'
-        appName: 'sdkapp'
+        appName: 'sdk-app'
         manifest: 'manifest.yml'
         credentialsId: 'CredentialsId-Cloud'

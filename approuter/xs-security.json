@@ -1,5 +1,5 @@
 {
-  "xsappname": "sdkapp",
+  "xsappname": "sdk-app",
   "tenant-mode": "shared",
   "scopes": [
     {

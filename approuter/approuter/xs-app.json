@@ -3,6 +3,6 @@
   "routes": [{
     "source": "/",
     "target": "/",
-    "destination": "app-destination"
+    "destination": "sdk-app"
     }]
 }
