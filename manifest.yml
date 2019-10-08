@@ -1,9 +1,9 @@
 ---
 applications:
 
-- name: sdk-app
+- name: sdkapp
   routes:
-    - route: sdk-app-d064809.cfapps.eu10.hana.ondemand.com
+    - route: sdkapp-d064809trial.cfapps.eu10.hana.ondemand.com
   memory: 1024M
   timeout: 300
   path: application/target/sdk-app-deployable-application.war
@@ -13,6 +13,6 @@ applications:
     TARGET_RUNTIME: tomee7
     SET_LOGGING_LEVEL: '{ROOT: INFO, com.sap.cloud.sdk: INFO}'
     JBP_CONFIG_SAPJVM_MEMORY_SIZES: 'metaspace:128m..'
-    destinations: [{name: 'ErpQueryEndpoint', url: 'https://mockserver-daring-baboon.cfapps.eu10.hana.ondemand.com/', username: 'DUMMY', password: 'dummy'}]
+    destinations: '[{"name": "ErpQueryEndpoint", "url": "https://mockserver-daring-baboon.cfapps.eu10.hana.ondemand.com/", "username": "DUMMY", "password": "dummy"}]'
   services:
   - my-xsuaa
